@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp');
+@import url('https://fonts.googleapis.com/css?family=Luxurious+Script');
+
 body {
     background: linear-gradient(-0.05turn, #597512, #887723, #73410e);
     margin: 0;
@@ -6,33 +9,27 @@ body {
     height: auto;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 450px 400px 400px;
+    grid-template-rows: 350px 350px;
+}
+
 .info-box {
     height: auto;
+    align-items: center;
     background: linear-gradient(-0.06turn, #d5b579, wheat);
-    position: relative;
     border: 2px solid #bb7700;
     border-radius: 10px;
     margin: 5px;
 }
 
-.info-box.bio {
-    width: 400px;
-    left: 450px;
-    bottom: 685px;
+.stats_grid{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
-.info-box.stats {
-    width: 400px;
-    left: 866px;
-    bottom: 1283px;
-}
-
-.info-box.info {
-    width: 400px;
-    left: 450px;
-    bottom: 680px;
-    align-items: center;
-}
 
 .table-wrapper {
     max-height: 500px;
@@ -58,11 +55,15 @@ table td{
     border: 1px solid #785a0d;
 }
 
-
+.box_profile_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
 
 .box_profile {
     height: auto;
-    width: 430px;
     border: 3px solid #bb9900;
     left: 5px;
     top: 5px;
@@ -100,23 +101,23 @@ table td{
     margin: 5px;
 }
 
-.sinner-side {
+#sinner-side {
     display: block;
 }
 
-.sinner-side.clicked {
+#sinner-side.clicked {
     display: none;
 }
 
-.repent-side {
+#repent-side {
     display: none;
 }
 
-.repent-side.clicked {
+#repent-side.clicked {
     display: block;
 }
 
-img {
+.portrait {
     border: 2px solid #550000;
     border-radius: 6px;
 }
@@ -141,7 +142,7 @@ img:hover {
 
 .bio-textfield {
     margin: 5px 2px 5px 5px;
-    max-height: 230px;
+    max-height: 260px;
     width: auto;
     text-align: left;
     text-indent: 10px;

@@ -4,212 +4,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=MedievalSharp">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Luxurious+Script">
     <title>Riliane Lucifen d'Autriche</title>
 </head>
 <body>
     <main>
-        <section class="info-box box_profile">
-            <hgroup>
-                <h1 class = "info-header main-header">Riliane Lucifen d'Autriche</h1>
-                <h2 class = "info-header sub-header">Daughter of Evil</h2>
-            </hgroup>
-            <figure>
-                <audio controls src="audio/Daughter_of_evil_(human_cover).mp3">Audio is not supported</audio>
-                <figcaption><small>"Daughter of Evil" song</small></figcaption>
-            </figure>
-            <hr class = "header-line main-line">
-            <div class = "portrait-wrapper">
-                <button id="portrait-swapper">Change portrait</button>
-                <div id = "sinner-side" class = "sinner-side">
-                    <img title="Riliane giving order to exterminate green kingdom" class="main-portrait" src="img/main_portrait.jpg"
+        <div class="box_profile_grid">
+            <section class="info-box box_profile">
+                <hgroup>
+                    <h1 class = "info-header main-header">Riliane Lucifen d'Autriche</h1>
+                    <h2 class = "info-header sub-header">Daughter of Evil</h2>
+                </hgroup>
+                <figure>
+                    <audio controls src="audio/Daughter_of_evil_(human_cover).mp3">Audio is not supported</audio>
+                    <figcaption><small>"Daughter of Evil" song</small></figcaption>
+                </figure>
+                <hr class = "header-line main-line">
+                <div id = "sinner-side">
+                    <img class="portrait" title="Riliane giving order to exterminate green kingdom" src="img/main_portrait.jpg"
                          width="400" height="400" alt="Main portrait">
                     <q class="main-quote">Now, kneel to me!</q>
                 </div>
-                <div id = "repent-side" class = "repent-side">
-                    <img title="Riliane repenting" class="repent-portrait" src="img/rin_repenting.PNG"
-                         width="400" height="400" alt="Main portrait">
+                <div id = "repent-side">
+                    <img class="portrait" title="Riliane repenting" src="img/rin_repenting.PNG"
+                         width="400" height="400" alt="Repenting portrait">
                     <q class="main-quote">If only we could be reborn...</q>
                 </div>
-                <script>
-                    const button = document.getElementById('portrait-swapper');
-                    const sinner = document.getElementById('sinner-side');
-                    const repent = document.getElementById('repent-side');
-                    button.addEventListener('click', () => {
-                        sinner.classList.toggle('clicked');
-                        repent.classList.toggle('clicked');
-                    });
-                </script>
-            </div>
-        </section>
-        <section class="info-box bio">
-            <h3 class = "info-header">Bio</h3>
-            <hr class = "header-line">
-            <div class="bio-textfield">
-                <p> <strong>Riliane Lucifen d'Autriche</strong>, aka The Daughter of Evil (original:
-                    <ruby>リリアンヌ<rt>Ririannu</rt></ruby>
-                    <ruby>＝ルシフェン＝<rt>Rushifen</rt></ruby>
-                    <ruby>ドートゥリシュ<rt>Dooturishu</rt></ruby>)
-                    is the former queen of Kingdom of Lucifenia.<br>
-                    Her obsession with the demon of Pride made her one of the main figures in
-                    <a href = "https://theevilliouschronicles.fandom.com/">Evillious Chronicles</a>.
-                </p>
-                <p> Her life included:</p>
-                <ul>
-                    <li>getting separated from her twin brother</li>
-                    <li>becoming a queen at the age of 14</li>
-                    <li>falling in love and getting rejected</li>
-                    <li>starting genocidal war against neighboring green kingdom</li>
-                    <li>facing revolution and getting sentenced</li>
-                    <li>losing her twin brother</li>
-                    <li>fleeing to port town</li>
-                    <li>living under another name as a nun</li>
-                    <li>repenting of her sins</li>
-                </ul>
-            </div>
-        </section>
-        <section class="info-box info">
-            <h3 class = "info-header">Info</h3>
-            <hr class = "header-line">
-            <table>
-                <tbody>
-                <tr>
-                    <td>Born</td>
-                    <td>December 27, EC 485</td>
-                </tr>
-                <tr>
-                    <td>Died</td>
-                    <td>December, EC 562</td>
-                </tr>
-                <tr>
-                    <td>Gender</td>
-                    <td>Female</td>
-                </tr>
-                <tr>
-                    <td>Hair color</td>
-                    <td>Blonde</td>
-                </tr>
-                <tr>
-                    <td>Eye color</td>
-                    <td>Blue</td>
-                </tr>
-                <tr>
-                    <td>Height</td>
-                    <td>154 cm</td>
-                </tr>
-                <tr>
-                    <td>Alignment</td>
-                    <td title="Before repentance"><u>Neutral Evil</u></td>
-                </tr>
-                <tr>
-                    <td>Temperament</td>
-                    <td>Choleric</td>
-                </tr>
-                <tr>
-                    <td>Voiced by</td>
-                    <td><a href="https://vocaloid.fandom.com/wiki/Kagamine_Rin_%26_Len">Kagamine Rin</a></td>
-                </tr>
-                <tr>
-                    <td>Favourite food</td>
-                    <td>Brioche</td>
-                </tr>
-                </tbody>
-            </table>
-        </section>
-        <section class="info-box stats">
-            <h3 class = "info-header">Stats</h3>
-            <hr class = "header-line">
-            <div class = "table-wrapper">
-                <table class="stats-table">
-                    <thead>
-                    <tr>
-                        <th scope="col">Parameter</th>
-                        <th scope="col">Value</th>
-                        <th scope="col">Comment</th>
-                    </tr>
-                    </thead>
+                <script src = 'scripts/app.js'></script>
+            </section>
+        </div>
+        <div>
+            <section class="info-box">
+                <h3 class = "info-header">Bio</h3>
+                <hr class = "header-line">
+                <div class="bio-textfield">
+                    <p> <strong>Riliane Lucifen d'Autriche</strong>, aka The Daughter of Evil (original:
+                        <ruby>リリアンヌ<rt>Ririannu</rt></ruby>
+                        <ruby>＝ルシフェン＝<rt>Rushifen</rt></ruby>
+                        <ruby>ドートゥリシュ<rt>Dooturishu</rt></ruby>)
+                        is the former queen of Kingdom of Lucifenia.<br>
+                        Her obsession with the demon of Pride made her one of the main figures in
+                        <a href = "https://theevilliouschronicles.fandom.com/">Evillious Chronicles</a>.
+                    </p>
+                    <p> Her life included:</p>
+                    <ul>
+                        <li>getting separated from her twin brother</li>
+                        <li>becoming a queen at the age of 14</li>
+                        <li>falling in love and getting rejected</li>
+                        <li>starting genocidal war against neighboring green kingdom</li>
+                        <li>facing revolution and getting sentenced</li>
+                        <li>losing her twin brother</li>
+                        <li>fleeing to port town</li>
+                        <li>living under another name as a nun</li>
+                        <li>repenting of her sins</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="stats_grid">
+            <section class="info-box">
+                <h3 class = "info-header">Stats</h3>
+                <hr class = "header-line">
+                <div class = "table-wrapper">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th scope="col">Parameter</th>
+                            <th scope="col">Value</th>
+                            <th scope="col">Comment</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Strength</td>
+                            <td><div class="stat-mark">••◦◦◦◦◦◦◦◦</div></td>
+                            <td>She's just a girl, what would you expect?</td>
+                        </tr>
+                        <tr>
+                            <td>Intelligence</td>
+                            <td><div class="stat-mark">••••••◦◦◦◦</div></td>
+                            <td>Her politics leading to revolution cannot be called farsighted</td>
+                        </tr>
+                        <tr>
+                            <td>Cooking</td>
+                            <td><div class="stat-mark">••••••••◦◦</div></td>
+                            <td>After fleeing, she learnt to cook decently</td>
+                        </tr>
+                        <tr>
+                            <td>Style</td>
+                            <td><div class="stat-mark">••••••••◦◦</div></td>
+                            <td>Her dress looks cool</td>
+                        </tr>
+                        <tr>
+                            <td>Animal handling</td>
+                            <td><div class="stat-mark">•••••••◦◦◦</div></td>
+                            <td>Her favourite horse is named Josephine</td>
+                        </tr>
+                        <tr>
+                            <td>Melee combat</td>
+                            <td rowspan="4"><div class="stat-mark">•◦◦◦◦◦◦◦◦◦</div></td>
+                            <td rowspan="4">As a princess, she has no combat skills</td>
+                        </tr>
+                        <tr>
+                            <td>Firearms combat</td>
+                        </tr>
+                        <tr>
+                            <td>Blades combat</td>
+                        </tr>
+                        <tr>
+                            <td>Bow combat</td>
+                        </tr>
+                        <tr>
+                            <td>Pride</td>
+                            <td><div class="stat-mark">••••••••••</div></td>
+                            <td>She <em>is</em> the sinner of Pride</td>
+                        </tr>
+                        <tr>
+                            <td>Envy</td>
+                            <td><div class="stat-mark">•••••••••◦</div></td>
+                            <td>Jealousy is the main reason of her war</td>
+                        </tr>
+                        <tr>
+                            <td>Wrath</td>
+                            <td><div class="stat-mark">•••••••••◦</div></td>
+                            <td>She executed lots of people</td>
+                        </tr>
+                        <tr>
+                            <td>Greed</td>
+                            <td><div class="stat-mark">•••••••◦◦◦</div></td>
+                        </tr>
+                        <tr>
+                            <td>Gluttony</td>
+                            <td><div class="stat-mark">••••••◦◦◦◦</div></td>
+                            <td>She loves <em>brioches</em></td>
+                        </tr>
+                        <tr>
+                            <td>Lust</td>
+                            <td><div class="stat-mark">••••◦◦◦◦◦◦</div></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Sloth</td>
+                            <td><div class="stat-mark">••••◦◦◦◦◦◦</div></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+        <div>
+            <section class="info-box">
+                <h3 class = "info-header">Info</h3>
+                <hr class = "header-line">
+                <table>
                     <tbody>
                     <tr>
-                        <td>Strength</td>
-                        <td><div class="stat-mark">••◦◦◦◦◦◦◦◦</div></td>
-                        <td>She's just a girl, what would you expect?</td>
+                        <td>Born</td>
+                        <td>December 27, EC 485</td>
                     </tr>
                     <tr>
-                        <td>Intelligence</td>
-                        <td><div class="stat-mark">••••••◦◦◦◦</div></td>
-                        <td>Her politics leading to revolution cannot be called farsighted</td>
+                        <td>Died</td>
+                        <td>December, EC 562</td>
                     </tr>
                     <tr>
-                        <td>Cooking</td>
-                        <td><div class="stat-mark">••••••••◦◦</div></td>
-                        <td>After fleeing, she learnt to cook decently</td>
+                        <td>Gender</td>
+                        <td>Female</td>
                     </tr>
                     <tr>
-                        <td>Style</td>
-                        <td><div class="stat-mark">••••••••◦◦</div></td>
-                        <td>Her dress looks cool</td>
+                        <td>Hair color</td>
+                        <td>Blonde</td>
                     </tr>
                     <tr>
-                        <td>Animal handling</td>
-                        <td><div class="stat-mark">•••••••◦◦◦</div></td>
-                        <td>Her favourite horse is named Josephine</td>
+                        <td>Eye color</td>
+                        <td>Blue</td>
                     </tr>
                     <tr>
-                        <td>Melee combat</td>
-                        <td rowspan="4"><div class="stat-mark">•◦◦◦◦◦◦◦◦◦</div></td>
-                        <td rowspan="4">As a princess, she has no combat skills</td>
+                        <td>Height</td>
+                        <td>154 cm</td>
                     </tr>
                     <tr>
-                        <td>Firearms combat</td>
+                        <td>Alignment</td>
+                        <td title="Before repentance"><u>Neutral Evil</u></td>
                     </tr>
                     <tr>
-                        <td>Blades combat</td>
+                        <td>Temperament</td>
+                        <td>Choleric</td>
                     </tr>
                     <tr>
-                        <td>Bow combat</td>
+                        <td>Voiced by</td>
+                        <td><a href="https://vocaloid.fandom.com/wiki/Kagamine_Rin_%26_Len">Kagamine Rin</a></td>
                     </tr>
                     <tr>
-                        <td>Pride</td>
-                        <td><div class="stat-mark">••••••••••</div></td>
-                        <td>She <em>is</em> the sinner of Pride</td>
-                    </tr>
-                    <tr>
-                        <td>Envy</td>
-                        <td><div class="stat-mark">•••••••••◦</div></td>
-                        <td>Jealousy is the main reason of her war</td>
-                    </tr>
-                    <tr>
-                        <td>Wrath</td>
-                        <td><div class="stat-mark">•••••••••◦</div></td>
-                        <td>She executed lots of people</td>
-                    </tr>
-                    <tr>
-                        <td>Greed</td>
-                        <td><div class="stat-mark">•••••••◦◦◦</div></td>
-                    </tr>
-                    <tr>
-                        <td>Gluttony</td>
-                        <td><div class="stat-mark">••••••◦◦◦◦</div></td>
-                        <td>She loves <em>brioches</em></td>
-                    </tr>
-                    <tr>
-                        <td>Lust</td>
-                        <td><div class="stat-mark">••••◦◦◦◦◦◦</div></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Sloth</td>
-                        <td><div class="stat-mark">••••◦◦◦◦◦◦</div></td>
+                        <td>Favourite food</td>
+                        <td>Brioche</td>
                     </tr>
                     </tbody>
                 </table>
-            </div>
-        </section>
-
-
+            </section>
+        </div>
     </main>
     <footer>
         ITMO CT Frontend, 2025. Most rights reserved.
